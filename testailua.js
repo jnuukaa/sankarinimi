@@ -4,7 +4,7 @@ let ika = ['Vastasyntynyt','Vauva','Sinappi','Puklu','Taapero','Napero',
 'Pleikkari','Hauis','Jäntevä','Naru','Betoni','Rauta','Gubbe','Muuri','Pyyhe',
 'Keppi','Super','Mega','Rölli','Tiukka','Kissa','Kärpäs','Housu','Moikkaaja',
 'Tölkki','Auto','Kivi','Nörtti','Bodaaja','Juoksija','Juna','Auto','Kenkä',
-'Vastasyntynyt','Vauva','Sinappi','Puklu','Taapero','Napero',
+'Vesi','Maito','Ilma','Pupu','Toimari','Duunari',
 'Tuhoaja','Hyppääjä','Hevos','Muurahais','Paperi','Pahis','Ankka','Koira','Zombi',
 'Buddha','Jeesus','Enkeli','Kahvikuppi','Posteljooni','Kuminauha','Puu','Kukka',
 'Pleikkari','Hauis','Jäntevä','Naru','Betoni','Rauta','Gubbe','Muuri','Pyyhe',
@@ -14,6 +14,9 @@ console.log('Vaihtoehtojen määrä:' + ika.length);
 
 let otsikko='<h1>Selvitä sankarinimesi!</h1>';
 document.getElementById("otsikko").innerHTML = otsikko;
+
+let piirros='<img src = "sankari.png">';
+document.getElementById("piirros").innerHTML = piirros;
 
 let nimenSyotto ='Nimesi: <input type="text" id="myName" value="">';
 document.getElementById("nimenSyotto").innerHTML = nimenSyotto;
@@ -30,7 +33,7 @@ document.getElementById("nappi").innerHTML = nappi;
 function myFunction() {
     let x = document.getElementById("myName").value;
     let z = document.getElementById("myAge").value;
-    let y = 'Sankarinimesi on: ' + (ika[(z)] || 'Uskomaton') + '-' + x;
+    let y = 'Sankarinimesi on: <b>' + (ika[(z)] || 'Uskomaton') + '-' + x + '</b>';
     document.getElementById("demo").innerHTML = y;
   }
 
