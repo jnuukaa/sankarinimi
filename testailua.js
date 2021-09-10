@@ -30,7 +30,7 @@ document.getElementById("nappi").innerHTML = nappi;
 function myFunction() {
     let x = document.getElementById("myName").value;
     let z = document.getElementById("myAge").value;
-    let y = 'Sankarinimesi on: ' + ika[(z)] + '-' + x;
+    let y = 'Sankarinimesi on: ' + (ika[(z)] || 'Uskomaton') + '-' + x;
     document.getElementById("demo").innerHTML = y;
   }
 
