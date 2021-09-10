@@ -10,7 +10,7 @@ body {
       color:blueviolet;
   }
 /* Keskitys muille kuin puhelimille */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
     body {
     text-align: center;
   } 
