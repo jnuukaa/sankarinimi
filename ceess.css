@@ -1,15 +1,21 @@
+
 body {
     font-family: 'Glory', sans-serif;
     background-color: rgb(219, 227, 230);
-    text-align: center;
-  }
-  
+}
   h1 {
     color: navy;
-    text-align: center;
-  }
-
+}
 #huomio {
       color:blueviolet;
   }
+/* Keskitys muille kuin puhelimille */
+@media screen and (min-width: 400px) {
+    body {
+    text-align: center;
+  } 
+  h1 {
+    text-align: center;
+  }
+}
 

@@ -1,3 +1,5 @@
+
+// Arvot sankarinimeä varten.
 let ika = ['Vastasyntynyt','Vauva','Sinappi','Puklu','Taapero','Napero',
 'Tuhoaja','Hyppääjä','Hevos','Muurahais','Paperi','Pahis','Ankka','Koira','Zombi',
 'Buddha','Jeesus','Enkeli','Kahvikuppi','Posteljooni','Kuminauha','Puu','Kukka',
@@ -10,7 +12,7 @@ let ika = ['Vastasyntynyt','Vauva','Sinappi','Puklu','Taapero','Napero',
 'Pleikkari','Hauis','Jäntevä','Naru','Betoni','Rauta','Gubbe','Muuri','Pyyhe',
 'Keppi','Super','Mega','Rölli','Tiukka','Kissa','Kärpäs','Housu','Moikkaaja',
 'Tölkki','Auto','Kivi','Nörtti','Bodaaja','Juoksija','Juna','Auto','Kenkä'];
-console.log('Vaihtoehtojen määrä:' + ika.length);
+
 
 let otsikko='<h1>Selvitä sankarinimesi!</h1>';
 document.getElementById("otsikko").innerHTML = otsikko;
@@ -30,6 +32,7 @@ document.getElementById("ohjeet").innerHTML = ohjeet;
 let nappi ='<button onclick="myFunction()">Paina</button>';
 document.getElementById("nappi").innerHTML = nappi;
 
+// Funktio iän määrittämän sankaruuden ja nimen yhdistämiseksi.
 function myFunction() {
     let x = document.getElementById("myName").value;
     let z = document.getElementById("myAge").value;
